@@ -1,0 +1,20 @@
+server:
+  port: 6666
+
+spring:
+  application:
+    name: order-tracker-app
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/order_track_system
+    username: postgres
+    password: postgres
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl:auto: update
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+

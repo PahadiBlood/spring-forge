@@ -1,5 +1,6 @@
 package xyz.manojraw.controller;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -11,6 +12,8 @@ import xyz.manojraw.dto.order.OrderResponse;
 import xyz.manojraw.service.impl.OrderServiceImpl;
 
 import java.util.List;
+
+@Tag(name = "Order", description = "Handles order operations")
 
 @RequiredArgsConstructor
 @RestController

@@ -1,5 +1,6 @@
 package xyz.manojraw.controller;
 
+import io.swagger.v3.oas.annotations.tags.Tag;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -10,6 +11,8 @@ import xyz.manojraw.dto.auth.AuthLoginRequest;
 import xyz.manojraw.dto.auth.AuthRegisterRequest;
 import xyz.manojraw.dto.auth.AuthResponse;
 import xyz.manojraw.service.impl.AuthServiceImpl;
+
+@Tag(name = "Auth", description = "Handles auth operations")
 
 @RequiredArgsConstructor
 @RestController

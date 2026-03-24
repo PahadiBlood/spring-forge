@@ -2,14 +2,12 @@ package xyz.manojraw;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
-import org.springframework.kafka.annotation.EnableKafka;
 
-@EnableKafka
 @SpringBootApplication
-public class OrderTrackerAppApplication {
+public class OrderTrackerNotificationApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(OrderTrackerAppApplication.class, args);
+		SpringApplication.run(OrderTrackerNotificationApplication.class, args);
 	}
 
 }
